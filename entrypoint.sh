@@ -78,6 +78,8 @@ main() {
     remote_branch=$PAGES_BRANCH
 
     echo "Using $version"
+    echo "remote_repo $remote_repo"
+    echo "remote_branch $remote_branch"
 
     echo Building with flags: ${BUILD_FLAGS:+"$BUILD_FLAGS"}
     zola build ${BUILD_FLAGS:+$BUILD_FLAGS}
