@@ -15,9 +15,11 @@ if [[ -z "$BUILD_DIR" ]]; then
     BUILD_DIR="."
 fi
 
+echo "log: OUT_DIR before ${OUT_DIR}"
 if [[ -z "$OUT_DIR" ]]; then
     OUT_DIR="public"
 fi
+echo "log: OUT_DIR after ${OUT_DIR}"
 
 if [[ -n "$REPOSITORY" ]]; then
     TARGET_REPOSITORY=$REPOSITORY
